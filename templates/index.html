@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    .name {
+        color: lightskyblue;
+    }
+    .name:hover {
+        color: red;
+    }
+    .pet {
+        display: flex;
+        justify-content: space-between;
+    }
+    .project-link, .li-item-href {
+        text-decoration: none;
+    }
+    .project-link:visited {
+        color: red;
+    }
+    .project-link:hover{
+        color: lightskyblue;
+    }
+    .project-link:active {
+        color: blue;
+    }
+    li > a {
+        background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    }
+
+
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="https://media-exp1.licdn.com/dms/image/C5603AQECuh2dMt45_Q/profile-displayphoto-shrink_200_200/0?e=1592438400&v=beta&t=CdPh8yTc_gRaR21qAgdBUcN6rgyK3dEISPBTLCgdfCE" style="width:100%" alt="Avatar">
+          <div class="w3-display-topleft w3-container w3-text-black">
+            <h2 class="heading name">Anatolii Krukovych</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Python Junior Developer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Kyiv, UA</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>anatoliinakrukovich@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>380639720837</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Python Django DRF Flask Pytest</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>HTML CSS JavaScript SCSS Bootstrap React</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">
+              <div class="w3-center w3-text-white">50%</div>
+            </div>
+          </div>
+          <p>Linux Git Docker</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <p>AWS (Elastic Beanstalk, EC2, RDS) GCP (App Engine)</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">30%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:75%"></div>
+          </div>
+          <p>Ukrainian</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Russian</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Pet Projects</h2>
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b><a class="project-link" href="https://krukovychknowsbest.herokuapp.com/" target="_blank">Simple Blog</a></b></h5>
+            <p>Technologies</p>
+            <div class="tech flex-container">
+          <ul class="pet">
+              <li>Django</li>
+              <li>PostgreSQL</li>
+              <li>Bootstrap</li>
+              <li>AWS S3 Bucket</li>
+          </ul>
+            </div>
+          <hr>
+        </div>
+           <div class="w3-container">
+            <h5 class="w3-opacity"><b><a class="project-link" href="https://topchatrestful.herokuapp.com/swagger/" target="_blank">RESTful API For messages</a></b></h5>
+            <p>Technologies</p>
+            <div class="tech flex-container">
+          <ul class="pet">
+              <li>Django</li>
+              <li>PostgreSQL</li>
+              <li>Django REST framework</li>
+              <li>Swagger documentation</li>
+          </ul>
+            </div>
+          <hr>
+        </div>
+           <div class="w3-container">
+            <h5 class="w3-opacity"><b><a class="project-link" href="https://chatsfornothing.herokuapp.com/" target="_blank">Chat rooms</a></b></h5>
+            <p>Technologies</p>
+            <div class="tech flex-container">
+          <ul class="pet">
+              <li>Django</li>
+              <li>Django Channels</li>
+              <li>PostgreSQL</li>
+          </ul>
+            </div>
+          <hr>
+        </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b><a class="project-link" href="https://face-recog-ak.herokuapp.com/" target="_blank">Face Recognition App</a></b></h5>
+            <p>Technologies</p>
+            <div class="tech flex-container">
+          <ul class="pet">
+              <li>Flask</li>
+              <li><a class="li-item-href" target="_blank" href="https://pypi.org/project/face-recognition/">face-recognition</a></li>
+              <li>PostgreSQL</li>
+              <li>Pytest</li>
+          </ul>
+            </div>
+          <hr>
+        </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b><a class="project-link" href="https://akreactcrm.herokuapp.com/swagger/" target="_blank">Simple CRM API</a></b></h5>
+            <p>Technologies</p>
+            <div class="tech flex-container">
+          <ul class="pet">
+              <li>Django</li>
+              <li>Django Rest Framework</li>
+              <li>PostgreSQL</li>
+              <li>Swagger documentation</li>
+          </ul>
+            </div>
+          <hr>
+        </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b><a class="project-link" href="https://akfrontendapi.herokuapp.com/" target="_blank">Front-end part for CRM </a></b></h5>
+            <p>Technologies</p>
+            <div class="tech flex-container">
+          <ul class="pet">
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Bootstrap</li>
+          </ul>
+            </div>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>National Technical University Of Ukraine KPI</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2019</h6>
+          <p>Master's Degree of Chemical Technology</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>EPAM University Program</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>10/2019 - 01/2020</h6>
+          <p>Python Courses</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>EPAM University Program</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>04/2020 - present</h6>
+          <p>Front-end (JavaScript) Online</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <a target="_blank" href="https://www.linkedin.com/in/akrukovych/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <a target="_blank" href="https://t.me/t0mThanks"><i class="fa fa-telegram w3-hover-opacity"></i></a>
+</footer>
+
+</body>
+</html>
