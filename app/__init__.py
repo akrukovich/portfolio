@@ -6,5 +6,3 @@ app.config["SECRET_KEY"]='asdasdasdasd'
 @app.route('/', methods=['GET'])
 def index():
     return render_template('index.html')
-
-app.run()
