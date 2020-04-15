@@ -1,0 +1,26 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    .name {
+        color: lightskyblue;
+    }
+    .name:hover {
+        color: red;
+    }
+    .pet {
+        display: flex;
+        justify-content: space-between;
+    }
+    .project-link, .li-item-href {
+        text-decoration: none;
+    }
+    .project-link:visited {
+        color: red;
+    }
+    .project-link:hover{
+        color: lightskyblue;
+    }
+    .project-link:active {
+        color: blue;
+    }
+    li > a {
+        background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    }
